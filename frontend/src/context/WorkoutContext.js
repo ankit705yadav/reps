@@ -21,10 +21,8 @@ export const WorkoutContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(workoutReducer, { workouts: null });
 
   return (
-    <WorkoutContext.Provider value={{ state, dispatch }}>
+    <WorkoutContext.Provider value={{ ...state, dispatch }}>
       {children}
     </WorkoutContext.Provider>
   );
 };
-
-20:00
