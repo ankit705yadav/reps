@@ -11,6 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch("/api/workouts");
+      console.log(response);
       const json = await response.json();
 
       if (response.ok) {

@@ -6,15 +6,20 @@ const mongoose = require("mongoose");
 //express app
 const app = express();
 
-//midleware
+//MiddleWare To get hold of req object
 app.use(express.json());
 
+//MiddleWare / log on eact api request
 app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();
 });
 
-//routes
+//routes to react to request
+// app.get()
+// app.post()
+// app.delete()
+// "/api/workouts" custom path for api
 app.use("/api/workouts", workoutRoutes);
 
 //db connection
