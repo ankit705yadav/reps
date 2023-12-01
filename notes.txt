@@ -1,0 +1,8 @@
+Todo:
+    add loin functionality
+    add day basis sepration on homePage
+    add progress bar for daily
+    look into google fit API
+
+
+    
