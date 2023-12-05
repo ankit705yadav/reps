@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const workoutRoutes = require("./routes/workouts");
+const userRoutes = require("./routes/user");
 const mongoose = require("mongoose");
 
 //express app
@@ -21,6 +22,7 @@ app.use((req, res, next) => {
 // app.delete()
 // "/api/workouts" custom path for api
 app.use("/api/workouts", workoutRoutes);
+app.use("/api/user", userRoutes);
 
 //db connection
 mongoose
