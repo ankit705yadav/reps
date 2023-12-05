@@ -3,13 +3,10 @@ const express = require("express");
 const workoutRoutes = require("./routes/workouts");
 const mongoose = require("mongoose");
 
-let cors = require("cors");
-app.use(cors());
-
 //express app
 const app = express();
 
-//MiddleWare To get hold of req object
+//MiddleWare To get hold of req object(like bodyParser)
 app.use(express.json());
 
 //MiddleWare / log on eact api request
