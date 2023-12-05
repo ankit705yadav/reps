@@ -42,4 +42,24 @@ userSchema.statics.register = async function (email, password) {
   return user;
 };
 
+//CUSTOM static login method
+userSchema.statics.login = async function (email, password) {
+  if (!email || !password) {
+    throw Error("All of the fields must be filled");
+  }
+  const user = await this.findOne({ email });
+
+  if (!user) {
+    throw Error("No such email is registered");
+  }
+
+  const match = await bcrypt.compare(password, user.password);
+
+  if (!match) {
+    throw Error("Wrong password");
+  }
+
+  return user;
+};
+
 module.exports = mongoose.model("userModel", userSchema);
