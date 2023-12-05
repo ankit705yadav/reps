@@ -15,8 +15,6 @@ const registerUser = async (req, res) => {
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
-
-  res.json({ msg: "REGisTER_USER" });
 };
 
 module.exports = { loginUser, registerUser };
