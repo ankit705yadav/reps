@@ -8,6 +8,12 @@ const Navbar = () => {
           <h1 className="material+symbols+outlined">Reps </h1>
           {/* <span class="material-symbols-outlined">exercise</span> */}
         </Link>
+        <nav>
+          <div>
+            <Link to="/login">Login</Link>
+            <Link to="signup">Signup</Link>
+          </div>
+        </nav>
       </div>
     </header>
   );
