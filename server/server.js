@@ -12,6 +12,9 @@ app.use(express.json());
 
 //MiddleWare / log on eact api request
 app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST, GET, PATCH,DEL");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
   console.log(req.path, req.method);
   next();
 });
