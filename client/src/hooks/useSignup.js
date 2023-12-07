@@ -10,11 +10,14 @@ export const useSignup = () => {
     setIsLoading(true);
     setError(null);
 
-    const response = await fetch("/api/user/register", {
-      method: "POST",
-      headers: { "content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
+    const response = await fetch(
+      "https://reps-server.vercel.app/api/user/register",
+      {
+        method: "POST",
+        headers: { "content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      }
+    );
     const json = await response.json();
 
     if (!response.ok) {
