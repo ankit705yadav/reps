@@ -1,3 +1,10 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
+  "routes": [
+    {
+      "headers": {
+        "Allow-Control-Allow-Origin": "*"
+      }
+    }
+  ]
 }
