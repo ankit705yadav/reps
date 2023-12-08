@@ -31,7 +31,7 @@ const WorkoutDetails = ({ workout }) => {
     <div className="workout-details">
       <h4>{workout.title}</h4>
       <p>
-        <strong>Wieght (kg): </strong>
+        <strong>Wieght: </strong>
         {workout.load}
       </p>
       <p>
