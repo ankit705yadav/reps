@@ -92,7 +92,7 @@ button {
   position: relative;
 
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
-  /* background-color: #333; */
+
   width: inherit;
 }
 .workout-details h4 {
@@ -139,10 +139,8 @@ form {
 }
 
 form button {
-  /* background: var(--primary); */
   background: #451952;
   background: #f39f5a;
-  /* background: white; */
   border: 0;
   color: #fff;
   padding: 10px;
