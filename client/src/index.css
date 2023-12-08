@@ -92,7 +92,7 @@ button {
   position: relative;
 
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
-
+  /* background-color: #333; */
   width: inherit;
 }
 .workout-details h4 {
@@ -133,14 +133,28 @@ input {
   box-sizing: border-box;
   margin-right: 500px;
 }
+
+form {
+  text-align: center;
+}
+
 form button {
-  background: var(--primary);
+  /* background: var(--primary); */
+  background: #451952;
+  background: #f39f5a;
+  /* background: white; */
   border: 0;
   color: #fff;
   padding: 10px;
   font-family: "Poppins";
   border-radius: 4px;
   cursor: pointer;
+  /* width: 100px; */
+  display: block;
+  /* height: 100px; */
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
 }
 div.error {
   padding: 10px;
@@ -168,8 +182,9 @@ form.login {
   max-width: 400px;
   margin: 40px auto;
   padding: 20px;
-  background: #fff;
+  background: #ae445a;
   border-radius: 4px;
+  color: white;
 }
 
 nav button {
