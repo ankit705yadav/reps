@@ -7,12 +7,12 @@
   --error: #e71968;
 }
 body {
-  background: #f1f1f1;
+  background: #451952;
   margin: 0;
   font-family: "Poppins";
 }
 header {
-  background: #fff;
+  background: #451952;
 }
 header .container {
   max-width: 1400px;
@@ -22,24 +22,23 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
-header a {
-  color: #333;
+header a,
+span {
+  color: white;
   text-decoration: none;
+}
+button {
+  background-color: #451952;
 }
 
 .pages {
   max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
-  background-color: #ac1aac;
 }
 
 /* homepage */
 .home {
-  /* display: grid; */
-  /* grid-template-columns: 3fr 1fr; */
-  /* gap: 100px; */
-  background-color: aqua;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -49,6 +48,11 @@ header a {
 
     .workout-detail-container {
       order: 2;
+      background: #f39f5a;
+      background: #ae445a;
+      /* background: #662549; */
+      margin-top: 20px;
+      border-radius: 10px;
       width: 100%;
       .details {
         width: 80%;
@@ -59,6 +63,10 @@ header a {
     }
     .workout-form-container {
       order: 1;
+
+      background: #f39f5a;
+      background: #662549;
+      border-radius: 10px;
       width: 100%;
       .form1 {
         margin: 20px 35px;
@@ -68,15 +76,12 @@ header a {
 }
 
 .workout-detail-container {
-  background-color: black;
-  /* order: 2; */
   width: 70%;
 }
 
 .workout-form-container {
-  background-color: greenyellow;
-  /* order: 1; */
   width: 25%;
+  color: white;
 }
 
 .workout-details {
@@ -87,7 +92,7 @@ header a {
   position: relative;
 
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
-  /* background-color: #333; */
+
   width: inherit;
 }
 .workout-details h4 {
